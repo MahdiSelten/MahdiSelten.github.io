@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -74,14 +77,14 @@
                     </div>
                     <div class="about-item">
                         <div class="abt-text">
-                            <p class="large-text">2+</p>
-                            <p class="small-text">Years of <br /> experience</p>
+                            <p class="large-text">3+</p>
+                            <p class="small-text">Licence <br /> Degree</p>
                         </div>
                     </div>
                     <div class="about-item">
                         <div class="abt-text">
                             <p class="large-text">10+</p>
-                            <p class="small-text">Happy <br /> Clients</p>
+                            <p class="small-text">Acamedic <br /> Projects</p>
                         </div>
                     </div>
                     <div class="about-item">
@@ -316,12 +319,6 @@
                     <div class="hover-items">
                         <h3>Project Source</h3>
                         <div class="icons">
-                            <a href="#" class="icon">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-behance"></i>
-                            </a>
                             <a href="videos/Angular.mp4" class="icon">
                                 <i class="fab fa-youtube"></i>
                             </a>
@@ -336,12 +333,7 @@
                     <div class="hover-items">
                         <h3>Project Source</h3>
                         <div class="icons">
-                            <a href="#" class="icon">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-behance"></i>
-                            </a>
+                            
                             <a href="#" class="icon">
                                 <i class="fab fa-youtube"></i>
                             </a>
@@ -356,12 +348,6 @@
                     <div class="hover-items">
                         <h3>Project Source</h3>
                         <div class="icons">
-                            <a href="#" class="icon">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-behance"></i>
-                            </a>
                             <a href="videos/SB.mp4" class="icon">
                                 <i class="fab fa-youtube"></i>
                             </a>
@@ -376,12 +362,6 @@
                     <div class="hover-items">
                         <h3>Project Source</h3>
                         <div class="icons">
-                            <a href="#" class="icon">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-behance"></i>
-                            </a>
                             <a href="videos/GP.mp4" class="icon">
                                 <i class="fab fa-youtube"></i>
                             </a>
@@ -396,12 +376,6 @@
                     <div class="hover-items">
                         <h3>Project Source</h3>
                         <div class="icons">
-                            <a href="#" class="icon">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-behance"></i>
-                            </a>
                             <a href="videos/ES.mp4" class="icon">
                                 <i class="fab fa-youtube"></i>
                             </a>
@@ -417,12 +391,6 @@
                         <h3>Project Source</h3>
                         <div class="icons">
                             <a href="videos/TD.mp4" class="icon">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-behance"></i>
-                            </a>
-                            <a href="videos/TD.mp4" class="icon">
                                 <i class="fab fa-youtube"></i>
                             </a>
                         </div>
@@ -436,12 +404,7 @@
                     <div class="hover-items">
                         <h3>Project Source</h3>
                         <div class="icons">
-                            <a href="#" class="icon">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" class="icon">
-                                <i class="fab fa-behance"></i>
-                            </a>
+                            
                             <a href="#" class="icon">
                                 <i class="fab fa-youtube"></i>
                             </a>
@@ -667,12 +630,7 @@
                         <div class="hover-items">
                             <h3>Project Source</h3>
                             <div class="icons">
-                                <a href="#" class="icon">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                                <a href="#" class="icon">
-                                    <i class="fab fa-behance"></i>
-                                </a>
+                                
                                 <a href="videos/MoiPlay.mp4" class="icon">
                                     <i class="fab fa-youtube"></i>
                                 </a>
@@ -689,12 +647,8 @@
                         <div class="hover-items">
                             <h3>Project Source</h3>
                             <div class="icons">
-                                <a href="#" class="icon">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                                <a href="#" class="icon">
-                                    <i class="fab fa-behance"></i>
-                                </a>
+                                
+                                
                                 <a href="videos/SecGtaV.mp4" class="icon">
                                     <i class="fab fa-youtube"></i>
                                 </a>
@@ -711,12 +665,8 @@
                         <div class="hover-items">
                             <h3>Project Source</h3>
                             <div class="icons">
-                                <a href="#" class="icon">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                                <a href="#" class="icon">
-                                    <i class="fab fa-behance"></i>
-                                </a>
+                        
+                            
                                 <a href="img/Coach.jpg" class="icon">
                                     <i class="fab fa-youtube"></i>
                                 </a>
