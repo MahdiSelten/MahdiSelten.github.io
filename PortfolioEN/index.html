@@ -1,6 +1,46 @@
+<!--<?php
 
+require 'vendor/autoload.php';
 
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
+function sendEmail($to, $subject, $body) {
+    $mail = new PHPMailer(true);
+
+    try {
+        // Server settings
+        $mail->isSMTP();
+        $mail->Host       = getenv('smtp.gmail.com');
+        $mail->SMTPAuth   = true;
+        $mail->Username   = getenv('PhpMailer');
+        $mail->Password   = getenv('hfmb lijc avrk kczb');
+        $mail->Port       = getenv('587');
+
+        // Recipients
+        $mail->setFrom('mahdi.selten@gmail.com', 'Contact Form');
+        $mail->addAddress($to);
+
+        // Content
+        $mail->isHTML(false);
+        $mail->Subject = $subject;
+        $mail->Body    = $body;
+
+        $mail->send();
+
+        return 'Email sent successfully';
+    } catch (Exception $e) {
+        return 'Message could not be sent. Mailer Error: ' . $mail->ErrorInfo;
+    }
+}
+
+// Usage example
+$to = 'mahdi.maldoviche@email.com';
+$subject = 'Contact form';
+$body = 'This is the email body.';
+
+echo sendEmail($to, $subject, $body);
+?>-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
