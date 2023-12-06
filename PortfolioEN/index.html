@@ -841,10 +841,12 @@ echo sendEmail($to, $subject, $body);
 <script>
 function handleAuthClick() {
   gapi.auth.authorize({
-    client_id: '138851219398-hi3197sphinkkeq82biin1oh93it5ahp.apps.googleusercontent.com',
-    scope: 'https://www.googleapis.com/auth/gmail.send',
-    immediate: false
-  }, handleAuthResult);
+  client_id: '138851219398-hi3197sphinkkeq82biin1oh93it5ahp.apps.googleusercontent.com',
+  scope: 'https://www.googleapis.com/auth/gmail.send',
+  immediate: false,
+  response_type: 'token',
+  prompt: 'consent'
+}, handleAuthResult);
 }
 
 function handleAuthResult(authResult) {
