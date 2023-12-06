@@ -53,6 +53,10 @@ echo sendEmail($to, $subject, $body);
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="https://apis.google.com/js/api.js?key=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"></script>
+
+
 </head>
 <body class="main-content">
     <header class="container header active" id="home">
@@ -650,7 +654,7 @@ echo sendEmail($to, $subject, $body);
                                 </div>   
                                 <div class="submit-btn" style="margin-left: 100px;">
                                     <a href="#" class="main-btn">
-                                        <span class="btn-text">Send</span>
+                                        <button onclick="handleAuthClick()" class="btn-text">Authorize</button>
                                         <span class="btn-icon"><i class="fas fa-upload"></i></span>
                                     </a>
                                 </div>
@@ -833,4 +837,54 @@ echo sendEmail($to, $subject, $body);
     </div>
     <script src="app.js"></script>
 </body>
+
+<script>
+function handleAuthClick() {
+  gapi.auth.authorize({
+    client_id: '138851219398-hi3197sphinkkeq82biin1oh93it5ahp.apps.googleusercontent.com',
+    scope: 'https://www.googleapis.com/auth/gmail.send',
+    immediate: false
+  }, handleAuthResult);
+}
+
+function handleAuthResult(authResult) {
+  if (authResult && !authResult.error) {
+    loadGmailApi();
+  } else {
+    console.error('Authentication failed or was cancelled.');
+  }
+}
+
+function loadGmailApi() {
+  gapi.client.load('gmail', 'v1', sendEmail);
+}
+function sendEmail() {
+  const headers = {
+    'To': 'mahdi.maldoviche@gmail.com',
+    'Subject': 'Contact Form',
+  };
+
+  const message = [
+    'Content-Type: text/plain; charset="UTF-8"\n',
+    'MIME-Version: 1.0\n',
+    'Content-Transfer-Encoding: 7bit\n',
+    'to: ', headers.To, '\n',
+    'subject: ', headers.Subject, '\n\n',
+    'Body of the email\n'
+  ].join('');
+
+  const base64EncodedEmail = btoa(message);
+
+  gapi.client.gmail.users.messages.send({
+    userId: 'me',
+    resource: {
+      raw: base64EncodedEmail
+    }
+  }).then(function(response) {
+    console.log('Email sent:', response);
+  }, function(error) {
+    console.error('Error sending email:', error);
+  });
+}
+</script>
 </html>
