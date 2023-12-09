@@ -56,7 +56,15 @@ echo sendEmail($to, $subject, $body);
     <script src="https://apis.google.com/js/api.js"></script>
     <script src="https://apis.google.com/js/api.js?key=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"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.0/dist/email.min.js"></script>
-
+    <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+  ></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("D23NRndc0fvVFCZR8");
+    })();
+  </script>
 
 </head>
 <body class="main-content">
@@ -621,11 +629,11 @@ echo sendEmail($to, $subject, $body);
                         <p>( The form is still under development, the form will be available for use whenever this message between () gets removed )</p>
                         <form action="" class="contact-form">
                             <div class="input-control i-c-2">
-                                <input type="text" required placeholder="YOUR NAME">
-                                <input type="email" required placeholder="YOUR EMAIL">
+                                <input type="text" id="name" required placeholder="YOUR NAME">
+                                <input type="email" id="email" required placeholder="YOUR EMAIL">
                             </div>
                             <div class="input-control">
-                                <input type="text" required placeholder="ENTER SUBJECT">
+                                <input type="text" id="message" required placeholder="ENTER SUBJECT">
                             </div>
                             <div class="input-control">
                                 <textarea name="" id="" cols="15" rows="8" placeholder="Message Here..."></textarea>
@@ -639,25 +647,34 @@ echo sendEmail($to, $subject, $body);
                                 </div>   
                                 <div class="submit-btn" style="margin-left: 100px;">
                                     <a href="#" class="main-btn">
-                                        <button type="submit" onclick="Envoi()">Send Email</button>
+                                        <button type="submit" onclick="sendEmail()">Send Email</button>
                                         <span class="btn-icon"><i class="fas fa-upload"></i></span>
                                     </a>
                                 </div>
                             </div>
                             <script>
-                                function Envoi() {
-                                var templateParams = {
-                                to_name: 'xyz',
-                                from_name: 'abc',
-                                message_html: 'Please Find out the attached file'
-                              };
-                            
-                              emailjs.send('service_ys2y59r', 'template_1hc21wb', templateParams)
-                                .then(function(response) {
-                                  console.log('SUCCESS!', response.status, response.text);
-                                }, function(error) {
-                                  console.log('FAILED...', error);
-                                });}
+                                function sendMail() {
+  var params = {
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    message: document.getElementById("message").value,
+  };
+
+  const serviceID = "YOUR_SERVICE_ID";
+  const templateID = "YOUR_TEMPLETE_ID";
+
+    emailjs.send(serviceID, templateID, params)
+    .then(res=>{
+        document.getElementById("name").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("message").value = "";
+        console.log(res);
+        alert("Your message sent successfully!!")
+
+    })
+    .catch(err=>console.log(err));
+
+}
                             </script>
 
                         </form>
