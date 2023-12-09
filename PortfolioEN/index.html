@@ -638,12 +638,27 @@ echo sendEmail($to, $subject, $body);
                                 </div>   
                                 <div class="submit-btn" style="margin-left: 100px;">
                                     <a href="#" class="main-btn">
-                                        <button type="submit" onclick="sendEmail()">Send Email</button>
+                                        <button type="submit" onclick="Envoi()">Send Email</button>
                                         <span class="btn-icon"><i class="fas fa-upload"></i></span>
                                     </a>
                                 </div>
                             </div>
-                            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSefXu9JRwfSTgGGYlqAFq8qj0o-0xJJIM0QDb3TT-gQ5PhghQ/viewform?embedded=true" width="640" height="956" frameborder="0" marginheight="0" marginwidth="0">Chargement…</iframe>
+                            <script>
+                                function Envoi() {
+                                var templateParams = {
+                                to_name: 'xyz',
+                                from_name: 'abc',
+                                message_html: 'Please Find out the attached file'
+                              };
+                            
+                              emailjs.send('service_ys2y59r', 'template_1hc21wb', templateParams)
+                                .then(function(response) {
+                                  console.log('SUCCESS!', response.status, response.text);
+                                }, function(error) {
+                                  console.log('FAILED...', error);
+                                });}
+                            </script>
+
                         </form>
                     </div>
                 </div>
