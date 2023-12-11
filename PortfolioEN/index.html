@@ -627,7 +627,7 @@ echo sendEmail($to, $subject, $body);
                     </div>
                     <div class="right-contact">
                         <p>( The form is still under development, the form will be available for use whenever this message between () gets removed )</p>
-                        <form action="" class="contact-form">
+                        <form id="contact-form" action="" class="contact-form">
                             <div class="input-control i-c-2">
                                 <input type="text" id="name" required placeholder="YOUR NAME">
                                 <input type="email" id="email" required placeholder="YOUR EMAIL">
@@ -647,11 +647,27 @@ echo sendEmail($to, $subject, $body);
                                 </div>   
                                 <div class="submit-btn" style="margin-left: 100px;">
                                     <a href="#" class="main-btn">
-                                        <button type="submit" onclick="sendEmail()">Send Email</button>
+                                        <button type="submit">Send Email</button>
                                         <span class="btn-icon"><i class="fas fa-upload"></i></span>
                                     </a>
                                 </div>
                             </div>
+                            <script type="text/javascript">
+                                window.onload = function() {
+                                    document.getElementById('contact-form').addEventListener('submit', function(event) {
+                                        event.preventDefault();
+                                        // generate a five digit number for the contact_number variable
+                                        this.contact_number.value = Math.random() * 100000 | 0;
+                                        // these IDs from the previous steps
+                                        emailjs.sendForm('contact_service', 'contact_form', this)
+                                            .then(function() {
+                                                console.log('SUCCESS!');
+                                            }, function(error) {
+                                                console.log('FAILED...', error);
+                                            });
+                                    });
+                                }
+                            </script>
                             <script>
                                 function sendMail() {
   var params = {
