@@ -772,74 +772,7 @@ echo sendEmail($to, $subject, $body);
                         </div>
                     </div>
                     <div class="right-contact">
-                        <p>( The form is still under development, the form will be available for use whenever this message between () gets removed )</p>
-                        <form id="contact-form" action="" class="contact-form">
-                            <div class="input-control i-c-2">
-                                <input type="text" id="name" required placeholder="YOUR NAME">
-                                <input type="email" id="email" required placeholder="YOUR EMAIL">
-                            </div>
-                            <div class="input-control">
-                                <input type="text" id="message" required placeholder="ENTER SUBJECT">
-                            </div>
-                            <div class="input-control">
-                                <textarea name="" id="" cols="15" rows="8" placeholder="Message Here..."></textarea>
-                            </div>
-                            <div style="display: flex;">
-                                <div class="submit-btn">
-                                    <a href="docs/MyCV.pdf" class="main-btn">
-                                        <span class="btn-text">Download CV</span>
-                                        <span class="btn-icon"><i class="fas fa-download"></i></span>
-                                    </a>
-                                </div>   
-                                <div class="submit-btn" style="margin-left: 100px;">
-                                    <a href="#" class="main-btn">
-                                        <button type="submit">Send Email</button>
-                                        <span class="btn-icon"><i class="fas fa-upload"></i></span>
-                                    </a>
-                                </div>
-                            </div>
-                            <script type="text/javascript">
-                                window.onload = function() {
-                                    document.getElementById('contact-form').addEventListener('submit', function(event) {
-                                        event.preventDefault();
-                                        // generate a five digit number for the contact_number variable
-                                        this.contact_number.value = Math.random() * 100000 | 0;
-                                        // these IDs from the previous steps
-                                        emailjs.sendForm('contact_service', 'contact_form', this)
-                                            .then(function() {
-                                                console.log('SUCCESS!');
-                                            }, function(error) {
-                                                console.log('FAILED...', error);
-                                            });
-                                    });
-                                }
-                            </script>
-                            <script>
-                                function sendMail() {
-  var params = {
-    name: document.getElementById("name").value,
-    email: document.getElementById("email").value,
-    message: document.getElementById("message").value,
-  };
-
-  const serviceID = "service_ys2y59r";
-  const templateID = "template_1hc21wb";
-
-    emailjs.send(serviceID, templateID, params)
-    .then(res=>{
-        document.getElementById("name").value = "";
-        document.getElementById("email").value = "";
-        document.getElementById("message").value = "";
-        console.log(res);
-        alert("Your message sent successfully!!")
-
-    })
-    .catch(err=>console.log(err));
-
-}
-                            </script>
-
-                        </form>
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSefXu9JRwfSTgGGYlqAFq8qj0o-0xJJIM0QDb3TT-gQ5PhghQ/viewform?embedded=true" width="640" height="959" frameborder="0" marginheight="0" marginwidth="0">Chargement…</iframe>
                     </div>
                 </div>
             </div>
