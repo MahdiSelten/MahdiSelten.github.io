@@ -70,6 +70,11 @@ echo sendEmail($to, $subject, $body);
 <body class="main-content">
     <header class="container header active" id="home">
         <div class="header-content">
+            <div class="language-switch">
+                <button id="lang-en" class="lang-btn active">EN</button>
+                <button id="lang-fr" class="lang-btn">FR</button>
+            </div>
+
             <div class="left-header">
                 <div class="h-shape"></div>
                 <div class="image">
@@ -78,17 +83,26 @@ echo sendEmail($to, $subject, $body);
             </div>
             <div class="right-header">
                 <h1 class="name">
-                    Hi, I'm <span>Mahdi Selten.</span>
-                    A Data Science and AI engineering student.
+                    <span class="text-en">
+                        Hi, I'm <span>Mahdi Selten.</span><br>
+                        A Data Science and AI engineering student.
+                    </span>
+                    <span class="text-fr">
+                        Bonjour, je suis <span>Mahdi Selten.</span><br>
+                        Étudiant en ingénierie Data Science et Intelligence Artificielle.
+                    </span>
                 </h1>
                 <p>
-                    I'm a Computer Science and currently enhancing and diving in depth with Machine Learning Engineering, I would to constantly enhance my skills within the Machine Learning world
-                    weather with Exploratory Data Analysis, Machine Learning Models development and deployment whilst showing great interest to the understanding of the lower level layers of how models
-                    actually work.
+                    <span class="text-en">
+                        I'm a Computer Science student currently enhancing my skills in Machine Learning Engineering, including Exploratory Data Analysis, Machine Learning model development and deployment, with a strong interest in understanding how models work at a low level.
+                    </span>
+                    <span class="text-fr">
+                        Je suis étudiant en Informatique, actuellement en approfondissement en Machine Learning Engineering, incluant l’Exploratory Data Analysis, le développement et le déploiement de modèles, avec un fort intérêt pour la compréhension du fonctionnement interne des modèles.
+                    </span>
                 </p>
                 <div class="btn-con">
                     <a href="docs/LatestCV.pdf" class="main-btn">
-                        <span class="btn-text">Download CV</span>
+                        <span class="btn-text">CV</span>
                         <span class="btn-icon"><i class="fas fa-download"></i></span>
                     </a>
                 </div>
@@ -98,578 +112,590 @@ echo sendEmail($to, $subject, $body);
     <main>
         <section class="container about" id="about">
             <div class="main-title">
-                <h2>About <span>me</span><span class="bg-text">About me</span></h2>
+                <h2>
+                    <span class="text-en">About <span>me</span></span>
+                    <span class="text-fr">À propos <span>de moi</span></span>
+                    <span class="bg-text">About me</span>
+                </h2>
             </div>
             
                 <div class="left-about">
                     <h4></h4>
                     <p>
-                        I've been passionate with both separate fields being interested and dedicated to my active learning and future career
-                        whilst also keeping myself in good shape and health with a sport that's been a part of my daily routine since day one.
-                        One of the most things I value is time since it's the key to success and every second I spend needs to be worth it.
-                        Time means productivity therefore if wasted, there would be no self development.
-                        
+                        <span class="text-en">
+                            I've been passionate about both fields, staying dedicated to continuous learning and my future career, while also maintaining good health through sport, which has been part of my daily routine since day one. One of the things I value most is time, as it is the key to success—every second must be meaningful.
+                        </span>
+                        <span class="text-fr">
+                            Je suis passionné par ces deux domaines, engagé dans un apprentissage continu et orienté vers ma future carrière, tout en maintenant une bonne santé grâce au sport, présent dans ma routine quotidienne depuis toujours. L’une des choses que je valorise le plus est le temps, car il est la clé du succès : chaque seconde doit avoir de la valeur.
+                        </span>
                     </p>
                     
                 </div>
                 
-            <div class="about-container">
-                <div class="left-about"><div class="btn-con">
+                    <div class="about-container">
+            <div class="left-about">
+                <div class="btn-con">
                     <a href="docs/LatestCV.pdf" class="main-btn">
-                        <span class="btn-text">Download CV</span>
+                        <span class="btn-text">
+                            <span class="text-en">CV</span>
+                            <span class="text-fr">CV</span>
+                        </span>
                         <span class="btn-icon"><i class="fas fa-download"></i></span>
                     </a>
                 </div>
-                
+
                 <div class="right-about">
                     <div class="about-item">
                         <div class="abt-text">
                             <p class="large-text">10+</p>
-                            <p class="small-text">Projects <br /> On Work/Completed</p>
+                            <p class="small-text">
+                                <span class="text-en">Projects <br /> On Work/Completed</span>
+                                <span class="text-fr">Projets <br /> En cours / Terminés</span>
+                            </p>
                         </div>
                     </div>
+
                     <div class="about-item">
                         <div class="abt-text">
                             <p class="large-text">4+</p>
-                            <p class="small-text">Licence <br /> Degree</p>
-                            <p class="small-text">Engineering <br /> Degree</p>
-
+                            <p class="small-text">
+                                <span class="text-en">Licence <br /> Degree</span>
+                                <span class="text-fr">Licence <br /> Informatique</span>
+                            </p>
+                            <p class="small-text">
+                                <span class="text-en">Engineering <br /> Degree</span>
+                                <span class="text-fr">Cycle <br /> Ingénieur</span>
+                            </p>
                         </div>
                     </div>
+
                     <div class="about-item">
                         <div class="abt-text">
                             <p class="large-text">10+</p>
-                            <p class="small-text">Acamedic <br /> Projects</p>
+                            <p class="small-text">
+                                <span class="text-en">Academic <br /> Projects</span>
+                                <span class="text-fr">Projets <br /> Académiques</span>
+                            </p>
                         </div>
                     </div>
+
                     <div class="about-item">
                         <div class="abt-text">
                             <p class="large-text">3+</p>
-                            <p class="small-text">Different <br /> fields</p>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-            <br>
-            <div class="about-stats">
-                <h4 class="stat-title">My Skills</h4>
-                <div class="progress-bars">
-                    <div class="progress-bar">
-                        <p class="prog-title">html5</p>
-                        <div class="progress-con">
-                            <p class="prog-text">80%</p>
-                            <div class="progress">
-                                <span class="html"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">css3</p>
-                        <div class="progress-con">
-                            <p class="prog-text">80%</p>
-                            <div class="progress">
-                                <span class="css"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">scss</p>
-                        <div class="progress-con">
-                            <p class="prog-text">50%</p>
-                            <div class="progress">
-                                <span class="css"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">javascript</p>
-                        <div class="progress-con">
-                            <p class="prog-text">50%</p>
-                            <div class="progress">
-                                <span class="js"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">Unity</p>
-                        <div class="progress-con">
-                            <p class="prog-text">75%</p>
-                            <div class="progress">
-                                <span class="react"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">C# for Unity</p>
-                        <div class="progress-con">
-                            <p class="prog-text">75%</p>
-                            <div class="progress">
-                                <span class="react"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">C# for devExpress XAF</p>
-                        <div class="progress-con">
-                            <p class="prog-text">40%</p>
-                            <div class="progress">
-                                <span class="react"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">NodeJS</p>
-                        <div class="progress-con">
-                            <p class="prog-text">50%</p>
-                            <div class="progress">
-                                <span class="node"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">Python for Data Science</p>
-                        <div class="progress-con">
-                            <p class="prog-text">70%</p>
-                            <div class="progress">
-                                <span class="python"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">C</p>
-                        <div class="progress-con">
-                            <p class="prog-text">50%</p>
-                            <div class="progress">
-                                <span class="react"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">Java</p>
-                        <div class="progress-con">
-                            <p class="prog-text">75%</p>
-                            <div class="progress">
-                                <span class="react"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">Blender</p>
-                        <div class="progress-con">
-                            <p class="prog-text">60%</p>
-                            <div class="progress">
-                                <span class="react"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">Adope Photoshop</p>
-                        <div class="progress-con">
-                            <p class="prog-text">50%</p>
-                            <div class="progress">
-                                <span class="react"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">Adope Premiere</p>
-                        <div class="progress-con">
-                            <p class="prog-text">60%</p>
-                            <div class="progress">
-                                <span class="react"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">Adobe After Affects</p>
-                        <div class="progress-con">
-                            <p class="prog-text">50%</p>
-                            <div class="progress">
-                                <span class="react"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">Figma</p>
-                        <div class="progress-con">
-                            <p class="prog-text">50%</p>
-                            <div class="progress">
-                                <span class="react"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar">
-                        <p class="prog-title">Angular</p>
-                        <div class="progress-con">
-                            <p class="prog-text">60%</p>
-                            <div class="progress">
-                                <span class="react"></span>
-                            </div>
+                            <p class="small-text">
+                                <span class="text-en">Different <br /> fields</span>
+                                <span class="text-fr">Domaines <br /> Différents</span>
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
-            <br>
-            <h4 class="stat-title">Education/Internships</h4>
-            <br>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase"></i>
+        </div>
+
+        <br>
+
+        <div class="about-stats">
+            <h4 class="stat-title">
+                <span class="text-en">My Skills</span>
+                <span class="text-fr">Mes Compétences</span>
+            </h4>
+
+            <div class="progress-bars">
+                <!-- Skills intentionally NOT translated -->
+                <div class="progress-bar">
+                    <p class="prog-title">html5</p>
+                    <div class="progress-con">
+                        <p class="prog-text">80%</p>
+                        <div class="progress">
+                            <span class="html"></span>
+                        </div>
                     </div>
-                    <p class="tl-duration">2021 - present</p>
-                    <h5>Computer Science student<span> - ISITCOM</span></h5>
-                    <p>
-                        Studying the fundamentals such as AI, Data Science, Web Development, VR, AR.
-                    </p>
                 </div>
-                
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase"></i>
+
+                <div class="progress-bar">
+                    <p class="prog-title">css3</p>
+                    <div class="progress-con">
+                        <p class="prog-text">80%</p>
+                        <div class="progress">
+                            <span class="css"></span>
+                        </div>
                     </div>
-                    <p class="tl-duration">July 2023 - August 2023</p>
-                    <h5>DevExpress XAF Development<span> Tunisian United Solutions </span></h5>
-                    <p>
-                        Familiarisation with Business oriented Websites + Framework with C#, SQL
-                    </p>
                 </div>
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase"></i>
+
+                <div class="progress-bar">
+                    <p class="prog-title">scss</p>
+                    <div class="progress-con">
+                        <p class="prog-text">50%</p>
+                        <div class="progress">
+                            <span class="css"></span>
+                        </div>
                     </div>
-                    <p class="tl-duration">2020 - 2021</p>
-                    <h5>Baccalaureat - <span>Hammam Sousse High School</span></h5>
-                    <p>
-                        Baccalaureat in Mathmatics.
-                    </p>
                 </div>
-                
-                <div class="timeline-item">
-                    <div class="tl-icon">
-                        <i class="fas fa-briefcase"></i>
+
+                <div class="progress-bar">
+                    <p class="prog-title">javascript</p>
+                    <div class="progress-con">
+                        <p class="prog-text">50%</p>
+                        <div class="progress">
+                            <span class="js"></span>
+                        </div>
                     </div>
-                    <p class="tl-duration">July 2022 - August 2022</p>
-                    <h5>Web Development<span> Bus Software</span></h5>
-                    <p>
-                        Developing different parts of the website that includes dynamic displaying of
-                        images ( a gallery with) displaying statistics (ChartJS) using HTML CSS JS PHP Bootstrap
-                        and MySQL.
-                    </p>
+                </div>
+
+                <div class="progress-bar">
+                    <p class="prog-title">Unity</p>
+                    <div class="progress-con">
+                        <p class="prog-text">75%</p>
+                        <div class="progress">
+                            <span class="react"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="progress-bar">
+                    <p class="prog-title">C# for Unity</p>
+                    <div class="progress-con">
+                        <p class="prog-text">75%</p>
+                        <div class="progress">
+                            <span class="react"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="progress-bar">
+                    <p class="prog-title">C# for devExpress XAF</p>
+                    <div class="progress-con">
+                        <p class="prog-text">40%</p>
+                        <div class="progress">
+                            <span class="react"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="progress-bar">
+                    <p class="prog-title">NodeJS</p>
+                    <div class="progress-con">
+                        <p class="prog-text">50%</p>
+                        <div class="progress">
+                            <span class="node"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="progress-bar">
+                    <p class="prog-title">Python for Data Science</p>
+                    <div class="progress-con">
+                        <p class="prog-text">70%</p>
+                        <div class="progress">
+                            <span class="python"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="progress-bar">
+                    <p class="prog-title">C</p>
+                    <div class="progress-con">
+                        <p class="prog-text">50%</p>
+                        <div class="progress">
+                            <span class="react"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="progress-bar">
+                    <p class="prog-title">Java</p>
+                    <div class="progress-con">
+                        <p class="prog-text">75%</p>
+                        <div class="progress">
+                            <span class="react"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="progress-bar">
+                    <p class="prog-title">Blender</p>
+                    <div class="progress-con">
+                        <p class="prog-text">60%</p>
+                        <div class="progress">
+                            <span class="react"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="progress-bar">
+                    <p class="prog-title">Adope Photoshop</p>
+                    <div class="progress-con">
+                        <p class="prog-text">50%</p>
+                        <div class="progress">
+                            <span class="react"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="progress-bar">
+                    <p class="prog-title">Adope Premiere</p>
+                    <div class="progress-con">
+                        <p class="prog-text">60%</p>
+                        <div class="progress">
+                            <span class="react"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="progress-bar">
+                    <p class="prog-title">Adobe After Affects</p>
+                    <div class="progress-con">
+                        <p class="prog-text">50%</p>
+                        <div class="progress">
+                            <span class="react"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="progress-bar">
+                    <p class="prog-title">Figma</p>
+                    <div class="progress-con">
+                        <p class="prog-text">50%</p>
+                        <div class="progress">
+                            <span class="react"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="progress-bar">
+                    <p class="prog-title">Angular</p>
+                    <div class="progress-con">
+                        <p class="prog-text">60%</p>
+                        <div class="progress">
+                            <span class="react"></span>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
+
+            <br>
+<h4 class="stat-title">
+    <span class="text-en">Education / Internships</span>
+    <span class="text-fr">Formation / Stages</span>
+</h4>
+<br>
+
+<div class="timeline">
+
+    <div class="timeline-item">
+        <div class="tl-icon">
+            <i class="fas fa-briefcase"></i>
+        </div>
+        <p class="tl-duration">2021 - present</p>
+        <h5>
+            <span class="text-en">Computer Science student</span>
+            <span class="text-fr">Étudiant en Informatique</span>
+            <span> - ISITCOM</span>
+        </h5>
+        <p>
+            <span class="text-en">
+                Studying the fundamentals such as AI, Data Science, Web Development, VR, AR.
+            </span>
+            <span class="text-fr">
+                Étude des fondamentaux tels que l’IA, la Data Science, le développement web, la VR et l’AR.
+            </span>
+        </p>
+    </div>
+
+    <div class="timeline-item">
+        <div class="tl-icon">
+            <i class="fas fa-briefcase"></i>
+        </div>
+        <p class="tl-duration">July 2023 - August 2023</p>
+        <h5>
+            <span class="text-en">DevExpress XAF Development</span>
+            <span class="text-fr">Développement DevExpress XAF</span>
+            <span> - Tunisian United Solutions</span>
+        </h5>
+        <p>
+            <span class="text-en">
+                Familiarisation with business-oriented websites and frameworks using C# and SQL.
+            </span>
+            <span class="text-fr">
+                Familiarisation avec des sites web orientés métier et des frameworks utilisant C# et SQL.
+            </span>
+        </p>
+    </div>
+
+    <div class="timeline-item">
+        <div class="tl-icon">
+            <i class="fas fa-briefcase"></i>
+        </div>
+        <p class="tl-duration">2020 - 2021</p>
+        <h5>
+            <span class="text-en">Baccalaureate</span>
+            <span class="text-fr">Baccalauréat</span>
+            <span> - Hammam Sousse High School</span>
+        </h5>
+        <p>
+            <span class="text-en">Baccalaureate in Mathematics.</span>
+            <span class="text-fr">Baccalauréat en Mathématiques.</span>
+        </p>
+    </div>
+
+    <div class="timeline-item">
+        <div class="tl-icon">
+            <i class="fas fa-briefcase"></i>
+        </div>
+        <p class="tl-duration">July 2022 - August 2022</p>
+        <h5>
+            <span class="text-en">Web Development</span>
+            <span class="text-fr">Développement Web</span>
+            <span> - Bus Software</span>
+        </h5>
+        <p>
+            <span class="text-en">
+                Developing different parts of a website including dynamic image galleries and statistics
+                display using ChartJS with HTML, CSS, JavaScript, PHP, Bootstrap and MySQL.
+            </span>
+            <span class="text-fr">
+                Développement de différentes parties d’un site web incluant des galeries d’images dynamiques
+                et l’affichage de statistiques avec ChartJS, en utilisant HTML, CSS, JavaScript, PHP,
+                Bootstrap et MySQL.
+            </span>
+        </p>
+    </div>
+
+</div>
         </section>
         <section class="container" id="portfolio">
             <div class="main-title">
-                <h2>My <span>Portfolio</span><span class="bg-text">My Work</span></h2>
+                <h2>
+    <span class="text-en">My <span>Portfolio</span></span>
+    <span class="text-fr">Mon <span>Portfolio</span></span>
+    <span class="bg-text text-en">My Work</span>
+    <span class="bg-text text-fr">Mon Travail</span>
+</h2>
             </div>
             <p class="port-text">
-                Here is some of my work that I've done/been working on in various programming languages.
-                It should be noted that this section is still under current development and the appearence of
-                the projects will depend on personal futur choices. This section is still missing some projects due to some technicalities
-                which they will be added in future projects including and not limited to final licence degree semester project.
-            </p>
-            
+    <span class="text-en">
+        Here is some of my work that I've done / been working on in various programming languages.
+        It should be noted that this section is still under current development and the appearance of
+        the projects will depend on personal future choices. This section is still missing some projects
+        due to technicalities, which will be added in the future, including (but not limited to) the final
+        licence degree semester project.
+    </span>
+    <span class="text-fr">
+        Voici une partie de mon travail réalisé ou en cours de réalisation dans différents langages de programmation.
+        Il est à noter que cette section est toujours en cours de développement et que l’apparence des projets
+        dépendra de choix personnels futurs. Cette section ne contient pas encore certains projets pour des
+        raisons techniques, qui seront ajoutés ultérieurement, notamment (sans s’y limiter) le projet de fin
+        de semestre de licence.
+    </span>
+</p>
+
            
             <br>
             <br>
             <br>
-                <div style="display: flex; flex-direction: column;text-align: center;">
-                    <h4>Active Projects</h4>
-                    <div class="portfolios">
+                <div style="display: flex; flex-direction: column; text-align: center;">
+    <h4>
+        <span class="text-en">Active Projects</span>
+        <span class="text-fr">Projets Actifs</span>
+    </h4>
 
+    <div class="portfolios">
 
+        <div class="portfolio-item">
+            <div class="image">
+                <img src="img/DataMan.PNG" alt="">
+                <p>
+                    <span class="text-en">
+                        Automated Wikipedia Search using agentic AI <br> ( Langraph )
+                    </span>
+                    <span class="text-fr">
+                        Recherche automatisée sur Wikipédia à l’aide d’une IA agentique <br> ( Langraph )
+                    </span>
+                </p>
+            </div>
+            <div class="hover-items">
+                <h3>
+                    <span class="text-en">Active ...</span>
+                    <span class="text-fr">En cours ...</span>
+                </h3>
+            </div>
+        </div>
 
-                        
-                        
-                        <div class="portfolio-item">
-                            <div class="image">
-                                <img src="img/DataMan.PNG" alt="">
-                                <p>Automated Wikipedia Search using agentic AI <br> ( Langraph )</p>
-                            </div>
-                            <div class="hover-items">
-                                <h3>Active ...</h3>
-                                <div class="icons">
-                                    
-                                    
-                                </div>
-                            </div>
-                        </div>
+        <div class="portfolio-item">
+            <div class="image">
+                <img src="img/DataMan.PNG" alt="">
+                <p>
+                    <span class="text-en">
+                        Intrusion Detection System using a combination of AutoEncoders and classic RNN/CNN architectures <br> ( Tensorflow / Scikit-learn )
+                    </span>
+                    <span class="text-fr">
+                        Système de détection d’intrusion utilisant une combinaison d’Auto-Encodeurs et d’architectures RNN/CNN classiques <br> ( Tensorflow / Scikit-learn )
+                    </span>
+                </p>
+            </div>
+            <div class="hover-items">
+                <h3>
+                    <span class="text-en">Active ...</span>
+                    <span class="text-fr">En cours ...</span>
+                </h3>
+            </div>
+        </div>
 
-                        <div class="portfolio-item">
-                            <div class="image">
-                                <img src="img/DataMan.PNG" alt="">
-                                <p>Intrusion Detection System using a combination of AutoEncoders and classic RNN/CNN architectures <br> ( Tensorflow/Scikit-learn )</p>
-                            </div>
-                            <div class="hover-items">
-                                <h3>Active ...</h3>
-                                <div class="icons">
-                                    
-                                    
-                                </div>
-                            </div>
-                        </div>
+    </div>
+</div>
 
+<div style="display: flex; flex-direction: column; text-align: center;">
+    <h4>
+        <span class="text-en">ML & AI Projects</span>
+        <span class="text-fr">Projets ML & IA</span>
+    </h4>
 
-                      
+    <div class="portfolios">
 
-                       
-                        
-                    </div>
-                </div>
+        <div class="portfolio-item">
+            <div class="image">
+                <img src="img/DataMan.PNG" alt="">
+                <p>
+                    <span class="text-en">
+                        Simulation of automation of control of light and temperature using agentic AI (v2) <br> ( Langraph )
+                    </span>
+                    <span class="text-fr">
+                        Simulation de l’automatisation du contrôle de la lumière et de la température à l’aide d’une IA agentique (v2) <br> ( Langraph )
+                    </span>
+                </p>
+            </div>
+            <div class="hover-items">
+                <h3>
+                    <span class="text-en">Project Source</span>
+                    <span class="text-fr">Source du projet</span>
+                </h3>
+            </div>
+        </div>
 
-                <div style="display: flex; flex-direction: column;text-align: center;">
-                    <h4>ML & AI Projects</h4>
-                    <div class="portfolios">
+        <div class="portfolio-item">
+            <div class="image">
+                <img src="img/DataMan.PNG" alt="">
+                <p>
+                    <span class="text-en">
+                        Simulation of automation of control of light using agentic AI (v1) <br> ( Langraph )
+                    </span>
+                    <span class="text-fr">
+                        Simulation de l’automatisation du contrôle de la lumière via IA agentique (v1) <br> ( Langraph )
+                    </span>
+                </p>
+            </div>
+            <div class="hover-items">
+                <h3>
+                    <span class="text-en">Project Source</span>
+                    <span class="text-fr">Source du projet</span>
+                </h3>
+            </div>
+        </div>
 
+        <div class="portfolio-item">
+            <div class="image">
+                <img src="img/DataMan.PNG" alt="">
+                <p>
+                    <span class="text-en">
+                        Simulation of a calculator through agentic AI <br> ( Langraph )
+                    </span>
+                    <span class="text-fr">
+                        Simulation d’une calculatrice via une IA agentique <br> ( Langraph )
+                    </span>
+                </p>
+            </div>
+            <div class="hover-items">
+                <h3>
+                    <span class="text-en">Project Source</span>
+                    <span class="text-fr">Source du projet</span>
+                </h3>
+            </div>
+        </div>
 
+        <div class="portfolio-item">
+            <div class="image">
+                <img src="img/DataMan.PNG" alt="">
+                <p>
+                    <span class="text-en">
+                        MovieVitrine ML & RNN models for review classification <br> ( Scikit-learn / Tensorflow )
+                    </span>
+                    <span class="text-fr">
+                        Modèles ML & RNN pour la classification d’avis MovieVitrine <br> ( Scikit-learn / Tensorflow )
+                    </span>
+                </p>
+            </div>
+            <div class="hover-items">
+                <h3>
+                    <span class="text-en">Project Source</span>
+                    <span class="text-fr">Source du projet</span>
+                </h3>
+            </div>
+        </div>
 
+        <div class="portfolio-item">
+            <div class="image">
+                <img src="img/DataMan.PNG" alt="">
+                <p>
+                    <span class="text-en">
+                        MovieVitrine ML model for spam detection <br> ( Scikit-learn )
+                    </span>
+                    <span class="text-fr">
+                        Modèle ML MovieVitrine pour la détection de spam <br> ( Scikit-learn )
+                    </span>
+                </p>
+            </div>
+            <div class="hover-items">
+                <h3>
+                    <span class="text-en">Project Source</span>
+                    <span class="text-fr">Source du projet</span>
+                </h3>
+            </div>
+        </div>
 
+        <div class="portfolio-item">
+            <div class="image">
+                <img src="img/DataMan.PNG" alt="">
+                <p>
+                    <span class="text-en">
+                        Titanic classification model (survived or not) <br> ( Scikit-learn )
+                    </span>
+                    <span class="text-fr">
+                        Modèle de classification Titanic (survie ou non) <br> ( Scikit-learn )
+                    </span>
+                </p>
+            </div>
+            <div class="hover-items">
+                <h3>
+                    <span class="text-en">Project Source</span>
+                    <span class="text-fr">Source du projet</span>
+                </h3>
+            </div>
+        </div>
 
-                        <div class="portfolio-item">
-                            <div class="image">
-                                <img src="img/DataMan.PNG" alt="">
-                                <p>Simulation of automation of control of light and temperature using agentic AI (v2)<br> ( Langraph )</p>
-                            </div>
-                            <div class="hover-items">
-                                <h3>Project Source</h3>
-                                <div class="icons">
-                                    
-                                    
-                                </div>
-                            </div>
-                        </div>
+        <div class="portfolio-item">
+            <div class="image">
+                <img src="img/DataMan.PNG" alt="">
+                <p>
+                    <span class="text-en">
+                        Data manipulation projects <br> ( Python for Data Science )
+                    </span>
+                    <span class="text-fr">
+                        Projets de manipulation de données <br> ( Python pour la Data Science )
+                    </span>
+                </p>
+            </div>
+            <div class="hover-items">
+                <h3>
+                    <span class="text-en">Project Source</span>
+                    <span class="text-fr">Source du projet</span>
+                </h3>
+            </div>
+        </div>
 
-                         <div class="portfolio-item">
-                            <div class="image">
-                                <img src="img/DataMan.PNG" alt="">
-                                <p>Simulation of automation of control of light agentic AI (v1) <br> ( Langraph )</p>
-                            </div>
-                            <div class="hover-items">
-                                <h3>Project Source</h3>
-                                <div class="icons">
-                                    
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        <div class="portfolio-item">
-                            <div class="image">
-                                <img src="img/DataMan.PNG" alt="">
-                                <p>Simulation of a calculator through agentic AI <br> ( Langraph )</p>
-                            </div>
-                            <div class="hover-items">
-                                <h3>Project Source</h3>
-                                <div class="icons">
-                                    
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        <div class="portfolio-item">
-                            <div class="image">
-                                <img src="img/DataMan.PNG" alt="">
-                                <p>MovieVitrine ML && RNN Models for review classification <br> ( Scikit-learn/tensorflow )</p>
-                            </div>
-                            <div class="hover-items">
-                                <h3>Project Source</h3>
-                                <div class="icons">
-                                    
-                                    
-                                </div>
-                            </div>
-                        </div>
+    </div>
+</div>
 
-                        <div class="portfolio-item">
-                            <div class="image">
-                                <img src="img/DataMan.PNG" alt="">
-                                <p>MovieVitrine ML Model for Spam Detection <br> ( Scikit-learn )</p>
-                            </div>
-                            <div class="hover-items">
-                                <h3>Project Source</h3>
-                                <div class="icons">
-                                    
-                                    
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="portfolio-item">
-                            <div class="image">
-                                <img src="img/DataMan.PNG" alt="">
-                                <p>Titanic Classification Model (Survived or not) <br> ( Scikit-learn )</p>
-                            </div>
-                            <div class="hover-items">
-                                <h3>Project Source</h3>
-                                <div class="icons">
-                                    
-                                    
-                                </div>
-                            </div>
-                        </div>
-
-                         <div class="portfolio-item">
-                            <div class="image">
-                                <img src="img/DataMan.PNG" alt="">
-                                <p>Iris Dataset Classification <br> ( Scikit-learn )</p>
-                            </div>
-                            <div class="hover-items">
-                                <h3>Project Source</h3>
-                                <div class="icons">
-                                    
-                                    
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="portfolio-item">
-                            <div class="image">
-                                <img src="img/DataMan.PNG" alt="">
-                                <p>IntelliCommerce, E-Commerce Recommendation Model <br> ( Scikit-learn/nlp )</p>
-                            </div>
-                            <div class="hover-items">
-                                <h3>Project Source</h3>
-                                <div class="icons">
-                                    
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        
-
-                        <div class="portfolio-item">
-                            <div class="image">
-                                <img src="img/DataMan.PNG" alt="">
-                                <p>IntelliCommerce, E-Commerce Spam Detection Model <br> ( Scikit-learn/nlp )</p>
-                            </div>
-                            <div class="hover-items">
-                                <h3>Project Source</h3>
-                                <div class="icons">
-                                    
-                                    
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="portfolio-item">
-                            <div class="image">
-                                <img src="img/DataMan.PNG" alt="">
-                                <p>Iris Dataset Classification <br> ( Scikit-learn )</p>
-                            </div>
-                            <div class="hover-items">
-                                <h3>Project Source</h3>
-                                <div class="icons">
-                                    
-                                    
-                                </div>
-                            </div>
-                        </div>
-
-
-
-
-
-
-
-                        
-                        <div class="portfolio-item">
-                            <div class="image">
-                                <img src="img/DataMan.PNG" alt="">
-                                <p>Data Manipulation Project(s) <br> ( Python for Data Science )</p>
-                            </div>
-                            <div class="hover-items">
-                                <h3>Project Source</h3>
-                                <div class="icons">
-                                    
-                                    
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="portfolio-item">
-                            <div class="image">
-                                <img src="img/DataMan.PNG" alt="">
-                                <p>Fake News Model <br> ( Python for Machine Learning )</p>
-                            </div>
-                            <div class="hover-items">
-                                <h3>Project Source</h3>
-                                <div class="icons">
-                                    
-                                    <a href="https://github.com/MahdiSelten/Fakenews/tree/main" class="icon">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="portfolio-item">
-                            <div class="image">
-                                <img src="img/DataMan.PNG" alt="">
-                                <p>Credit Card Fraud Model <br> ( Python for Machine Learning )</p>
-                            </div>
-                            <div class="hover-items">
-                                <h3>Project Source</h3>
-                                <div class="icons">
-                                    
-                                    <a href="https://github.com/MahdiSelten/creditCardFraud" class="icon">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="portfolio-item">
-                            <div class="image">
-                                <img src="img/DataMan.PNG" alt="">
-                                <p>Customer Segmentation Model <br> ( Python for Machine Learning )</p>
-                            </div>
-                            <div class="hover-items">
-                                <h3>Project Source</h3>
-                                <div class="icons">
-                                    
-                                    <a href="https://github.com/MahdiSelten/Customer-Segmentation" class="icon">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="portfolio-item">
-                            <div class="image">
-                                <img src="img/DataMan.PNG" alt="">
-                                <p>Movie Recommendation Model <br> ( Python for Machine Learning )</p>
-                            </div>
-                            <div class="hover-items">
-                                <h3>Project Source</h3>
-                                <div class="icons">
-                                    
-                                    <a href="https://github.com/MahdiSelten/MovieRecommendation" class="icon">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="portfolio-item">
-                            <div class="image">
-                                <img src="img/DataMan.PNG" alt="">
-                                <p>Spam Mail Detection <br> ( Python for Machine Learning )</p>
-                            </div>
-                            <div class="hover-items">
-                                <h3>Project Source</h3>
-                                <div class="icons">
-                                    
-                                    <a href="https://github.com/MahdiSelten/SpamMailsDetection" class="icon">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
 
                 <br>
                 <br>
@@ -677,232 +703,323 @@ echo sendEmail($to, $subject, $body);
 
 
                 
-                <div style="display: flex; flex-direction: column;text-align: center;">
-                    <h4>Web Development Project(s)</h4>
+               <div style="display: flex; flex-direction: column; text-align: center;">
+    <h4>
+        <span class="text-en">Web Development Project(s)</span>
+        <span class="text-fr">Projets de Développement Web</span>
+    </h4>
 
-                    <div class="portfolios">
+    <div class="portfolios">
 
-                        <div class="portfolio-item">
-                            <div class="image">
-                                <img src="img/Angu.PNG" alt="">
-                                <p>MovieVitrine ( Linked to the MovieVitrine and Spam Detection and Review Classification )</p>
-                            </div>
-                            <div class="hover-items">
-                                <h3>Project Source</h3>
-                                <div class="icons">
-                                    <a href="videos/Angular.mp4" class="icon">
-                                        <i class="fab fa-youtube"></i>
-                                    </a>
-                                </div>
-                            </div>
-
-                        </div><div class="portfolio-item">
-                            <div class="image">
-                                <img src="img/Angu.PNG" alt="">
-                                <p>MovieVitrine Back-End and Models EndPoint ( Linked to the Movie Vitrine and Spam Detection and Review Classification )</p>
-                            </div>
-                            <div class="hover-items">
-                                <h3>Project Source</h3>
-                                <div class="icons">
-                                    <a href="videos/Angular.mp4" class="icon">
-                                        <i class="fab fa-youtube"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="portfolio-item">
-                            <div class="image">
-                                <img src="img/Angu.PNG" alt="">
-                                <p>Titanic Survival Classification Model EndPoints exposure and deployment ( FastAPI )</p>
-                            </div>
-                            <div class="hover-items">
-                                <h3>Project Source</h3>
-                                <div class="icons">
-                                    <a href="videos/Angular.mp4" class="icon">
-                                        <i class="fab fa-youtube"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="portfolio-item">
-                            <div class="image">
-                                <img src="img/Angu.PNG" alt="">
-                                <p>Iris Classification Model EndPoints exposure and deployment ( FastAPI )</p>
-                            </div>
-                            <div class="hover-items">
-                                <h3>Project Source</h3>
-                                <div class="icons">
-                                    <a href="videos/Angular.mp4" class="icon">
-                                        <i class="fab fa-youtube"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="portfolio-item">
-                            <div class="image">
-                                <img src="img/Angu.PNG" alt="">
-                                <p>IntelliCommerce, E-Commerce Back-End Architecture, Development and Security <br> ( Spring/Springboot )</p>
-                            </div>
-                            <div class="hover-items">
-                                <h3>Project Source</h3>
-                                <div class="icons">
-                                    <a href="videos/Angular.mp4" class="icon">
-                                        <i class="fab fa-youtube"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="portfolio-item">
-                            <div class="image">
-                                <img src="img/Angu.PNG" alt="">
-                                <p>IntelliCommerce, E-Commerce Front-End Web Application <br> ( React js )</p>
-                            </div>
-                            <div class="hover-items">
-                                <h3>Project Source</h3>
-                                <div class="icons">
-                                    <a href="videos/Angular.mp4" class="icon">
-                                        <i class="fab fa-youtube"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="portfolio-item">
-                            <div class="image">
-                                <img src="img/Angu.PNG" alt="">
-                                <p>IntelliCommerce, E-Commerce AI Micro-Servicess Exposure and Deployment <br> ( Springboot/FastAPI )</p>
-                            </div>
-                            <div class="hover-items">
-                                <h3>Project Source</h3>
-                                <div class="icons">
-                                    <a href="videos/Angular.mp4" class="icon">
-                                        <i class="fab fa-youtube"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="portfolio-item">
-                            <div class="image">
-                                <img src="img/JavaP.PNG" alt="">
-                                <p>Web Dynamic Project ( SpringBoot )</p>
-                            </div>
-                            <div class="hover-items">
-                                <h3>Project Source</h3>
-                                <div class="icons">
-                                    <a href="videos/SpringBoot.mp4" class="icon">
-                                        <i class="fab fa-youtube"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                
-                
-                
-                </div>
-                <br>
-                <br>
-                <br>
-                 <div style="display: flex; flex-direction: column;text-align: center;">
-                <h4>Unity Projects</h4>
-                <div class="portfolios">
-                   
-                    <div class="portfolio-item">
-                        <div class="image">
-                            <img src="img/ARP.PNG" alt="">
-                            <p>Augmented Reality ( Unity )</p>
-                        </div>
-                        <div class="hover-items">
-                            <h3>Project Source</h3>
-                            <div class="icons">
-                                
-                                <a href="#" class="icon">
-                                    <i class="fab fa-youtube"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                
-                    <div class="portfolio-item">
-                        <div class="image">
-                            <img src="img/GlowingP.PNG" alt="">
-                            <p>Glowing Pong ( Unity )</p>
-                        </div>
-                        <div class="hover-items">
-                            <h3>Project Source</h3>
-                            <div class="icons">
-                                <a href="videos/GP.mp4" class="icon">
-                                    <i class="fab fa-youtube"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio-item">
-                        <div class="image">
-                            <img src="img/SRunner.PNG" alt="">
-                            <p>Shadow Runner ( Unity )</p>
-                        </div>
-                        <div class="hover-items">
-                            <h3>Project Source</h3>
-                            <div class="icons">
-                                <a href="videos/ES.mp4" class="icon">
-                                    <i class="fab fa-youtube"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio-item">
-                        <div class="image">
-                            <img src="img/TD.PNG" alt="">
-                            <p>Tower Defense ( Unity )</p>
-                        </div>
-                        <div class="hover-items">
-                            <h3>Project Source</h3>
-                            <div class="icons">
-                                <a href="videos/TD.mp4" class="icon">
-                                    <i class="fab fa-youtube"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                   
-                    
+        <div class="portfolio-item">
+            <div class="image">
+                <img src="img/Angu.PNG" alt="">
+                <p>
+                    <span class="text-en">
+                        MovieVitrine (Linked to the MovieVitrine and Spam Detection and Review Classification)
+                    </span>
+                    <span class="text-fr">
+                        MovieVitrine (lié à MovieVitrine, à la détection de spam et à la classification des avis)
+                    </span>
+                </p>
+            </div>
+            <div class="hover-items">
+                <h3>
+                    <span class="text-en">Project Source</span>
+                    <span class="text-fr">Source du projet</span>
+                </h3>
+                <div class="icons">
+                    <a href="videos/Angular.mp4" class="icon">
+                        <i class="fab fa-youtube"></i>
+                    </a>
                 </div>
             </div>
+        </div>
 
-                <div style="display: flex; flex-direction: column;text-align: center;">
-                    <h4>Other Projects</h4>
-
-                    <div class="portfolios">
-                        
-                        <div class="portfolio-item">
-                            <div class="image">
-                                <img src="img/Anotherone.PNG" alt="">
-                                <p>3D Modelling <br> (Blender)</p>
-                            </div>
-                            <div class="hover-items">
-                                <h3>Project Source</h3>
-                                <div class="icons">
-                                    
-                                    <a href="videos/BlenderProject.mp4" class="icon">
-                                        <i class="fab fa-youtube"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-            
-            
-            
+        <div class="portfolio-item">
+            <div class="image">
+                <img src="img/Angu.PNG" alt="">
+                <p>
+                    <span class="text-en">
+                        MovieVitrine Back-End and Models EndPoint (Linked to MovieVitrine and Spam Detection and Review Classification)
+                    </span>
+                    <span class="text-fr">
+                        Back-end MovieVitrine et exposition des endpoints des modèles (lié à MovieVitrine, détection de spam et classification des avis)
+                    </span>
+                </p>
+            </div>
+            <div class="hover-items">
+                <h3>
+                    <span class="text-en">Project Source</span>
+                    <span class="text-fr">Source du projet</span>
+                </h3>
+                <div class="icons">
+                    <a href="videos/Angular.mp4" class="icon">
+                        <i class="fab fa-youtube"></i>
+                    </a>
                 </div>
+            </div>
+        </div>
+
+        <div class="portfolio-item">
+            <div class="image">
+                <img src="img/Angu.PNG" alt="">
+                <p>
+                    <span class="text-en">
+                        Titanic Survival Classification Model endpoints exposure and deployment <br> ( FastAPI )
+                    </span>
+                    <span class="text-fr">
+                        Exposition et déploiement des endpoints du modèle de classification de survie Titanic <br> ( FastAPI )
+                    </span>
+                </p>
+            </div>
+            <div class="hover-items">
+                <h3>
+                    <span class="text-en">Project Source</span>
+                    <span class="text-fr">Source du projet</span>
+                </h3>
+                <div class="icons">
+                    <a href="videos/Angular.mp4" class="icon">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="portfolio-item">
+            <div class="image">
+                <img src="img/Angu.PNG" alt="">
+                <p>
+                    <span class="text-en">
+                        Iris Classification Model endpoints exposure and deployment <br> ( FastAPI )
+                    </span>
+                    <span class="text-fr">
+                        Exposition et déploiement des endpoints du modèle de classification Iris <br> ( FastAPI )
+                    </span>
+                </p>
+            </div>
+            <div class="hover-items">
+                <h3>
+                    <span class="text-en">Project Source</span>
+                    <span class="text-fr">Source du projet</span>
+                </h3>
+                <div class="icons">
+                    <a href="videos/Angular.mp4" class="icon">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="portfolio-item">
+            <div class="image">
+                <img src="img/Angu.PNG" alt="">
+                <p>
+                    <span class="text-en">
+                        IntelliCommerce, E-Commerce back-end architecture, development and security <br> ( Spring / Spring Boot )
+                    </span>
+                    <span class="text-fr">
+                        IntelliCommerce, architecture back-end, développement et sécurité e-commerce <br> ( Spring / Spring Boot )
+                    </span>
+                </p>
+            </div>
+            <div class="hover-items">
+                <h3>
+                    <span class="text-en">Project Source</span>
+                    <span class="text-fr">Source du projet</span>
+                </h3>
+                <div class="icons">
+                    <a href="videos/Angular.mp4" class="icon">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="portfolio-item">
+            <div class="image">
+                <img src="img/Angu.PNG" alt="">
+                <p>
+                    <span class="text-en">
+                        IntelliCommerce, E-Commerce front-end web application <br> ( React.js )
+                    </span>
+                    <span class="text-fr">
+                        IntelliCommerce, application web front-end e-commerce <br> ( React.js )
+                    </span>
+                </p>
+            </div>
+            <div class="hover-items">
+                <h3>
+                    <span class="text-en">Project Source</span>
+                    <span class="text-fr">Source du projet</span>
+                </h3>
+                <div class="icons">
+                    <a href="videos/Angular.mp4" class="icon">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="portfolio-item">
+            <div class="image">
+                <img src="img/Angu.PNG" alt="">
+                <p>
+                    <span class="text-en">
+                        IntelliCommerce, E-Commerce AI micro-services exposure and deployment <br> ( Spring Boot / FastAPI )
+                    </span>
+                    <span class="text-fr">
+                        IntelliCommerce, exposition et déploiement de micro-services IA e-commerce <br> ( Spring Boot / FastAPI )
+                    </span>
+                </p>
+            </div>
+            <div class="hover-items">
+                <h3>
+                    <span class="text-en">Project Source</span>
+                    <span class="text-fr">Source du projet</span>
+                </h3>
+                <div class="icons">
+                    <a href="videos/Angular.mp4" class="icon">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="portfolio-item">
+            <div class="image">
+                <img src="img/JavaP.PNG" alt="">
+                <p>
+                    <span class="text-en">
+                        Dynamic web project <br> ( Spring Boot )
+                    </span>
+                    <span class="text-fr">
+                        Projet web dynamique <br> ( Spring Boot )
+                    </span>
+                </p>
+            </div>
+            <div class="hover-items">
+                <h3>
+                    <span class="text-en">Project Source</span>
+                    <span class="text-fr">Source du projet</span>
+                </h3>
+                <div class="icons">
+                    <a href="videos/SpringBoot.mp4" class="icon">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<br><br><br>
+
+<div style="display: flex; flex-direction: column; text-align: center;">
+    <h4>
+        <span class="text-en">Unity Projects</span>
+        <span class="text-fr">Projets Unity</span>
+    </h4>
+
+    <div class="portfolios">
+
+        <div class="portfolio-item">
+            <div class="image">
+                <img src="img/ARP.PNG" alt="">
+                <p>
+                    <span class="text-en">Augmented Reality <br> ( Unity )</span>
+                    <span class="text-fr">Réalité augmentée <br> ( Unity )</span>
+                </p>
+            </div>
+            <div class="hover-items">
+                <h3>
+                    <span class="text-en">Project Source</span>
+                    <span class="text-fr">Source du projet</span>
+                </h3>
+            </div>
+        </div>
+
+        <div class="portfolio-item">
+            <div class="image">
+                <img src="img/GlowingP.PNG" alt="">
+                <p>
+                    <span class="text-en">Glowing Pong <br> ( Unity )</span>
+                    <span class="text-fr">Glowing Pong <br> ( Unity )</span>
+                </p>
+            </div>
+            <div class="hover-items">
+                <h3>
+                    <span class="text-en">Project Source</span>
+                    <span class="text-fr">Source du projet</span>
+                </h3>
+            </div>
+        </div>
+
+        <div class="portfolio-item">
+            <div class="image">
+                <img src="img/SRunner.PNG" alt="">
+                <p>
+                    <span class="text-en">Shadow Runner <br> ( Unity )</span>
+                    <span class="text-fr">Shadow Runner <br> ( Unity )</span>
+                </p>
+            </div>
+            <div class="hover-items">
+                <h3>
+                    <span class="text-en">Project Source</span>
+                    <span class="text-fr">Source du projet</span>
+                </h3>
+            </div>
+        </div>
+
+        <div class="portfolio-item">
+            <div class="image">
+                <img src="img/TD.PNG" alt="">
+                <p>
+                    <span class="text-en">Tower Defense <br> ( Unity )</span>
+                    <span class="text-fr">Tower Defense <br> ( Unity )</span>
+                </p>
+            </div>
+            <div class="hover-items">
+                <h3>
+                    <span class="text-en">Project Source</span>
+                    <span class="text-fr">Source du projet</span>
+                </h3>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div style="display: flex; flex-direction: column; text-align: center;">
+    <h4>
+        <span class="text-en">Other Projects</span>
+        <span class="text-fr">Autres Projets</span>
+    </h4>
+
+    <div class="portfolios">
+        <div class="portfolio-item">
+            <div class="image">
+                <img src="img/Anotherone.PNG" alt="">
+                <p>
+                    <span class="text-en">3D Modelling <br> ( Blender )</span>
+                    <span class="text-fr">Modélisation 3D <br> ( Blender )</span>
+                </p>
+            </div>
+            <div class="hover-items">
+                <h3>
+                    <span class="text-en">Project Source</span>
+                    <span class="text-fr">Source du projet</span>
+                </h3>
+                <div class="icons">
+                    <a href="videos/BlenderProject.mp4" class="icon">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 
                 <br>
@@ -918,53 +1035,77 @@ echo sendEmail($to, $subject, $body);
              
         </section>
         <section class="container" id="blogs">
-            <div class="blogs-content">
-                <div class="main-title">
-                    <h2>My <span>Goals</span><span class="bg-text">My Goals</span></h2>
+    <div class="blogs-content">
+        <div class="main-title">
+            <h2>
+                <span class="text-en">My <span>Goals</span></span>
+                <span class="text-fr">Mes <span>Objectifs</span></span>
+                <span class="bg-text text-en">My Goals</span>
+                <span class="bg-text text-fr">Mes Objectifs</span>
+            </h2>
+        </div>
+
+        <br><br><br>
+
+        <div class="main-title">
+            <div class="blogs">
+
+                <div class="blog">
+                    <img src="img/MLE.jpg" alt="">
+                    <div class="blog-text">
+                        <h4>
+                            <span class="text-en">Exploratory Data Analysis</span>
+                            <span class="text-fr">Analyse Exploratoire des Données</span>
+                        </h4>
+                        <p>
+                            <span class="text-en">
+                                Gain a better and proper approach on how to understand data and determine correlations using different techniques.
+                            </span>
+                            <span class="text-fr">
+                                Acquérir une meilleure approche pour comprendre les données et identifier les corrélations à l’aide de différentes techniques.
+                            </span>
+                        </p>
+                    </div>
                 </div>
 
-                <br>
-                <br>
-                <br>
-
-
-                <div class="main-title">
-                    <div class="blogs">
-                        <div class="blog">
-                            <img src="img/MLE.jpg" alt="">
-                            <div class="blog-text">
-                                <h4>
-                                    Exploratory Data Analysis
-                                </h4>
-                                <p>
-                                    Gain a better and proper approach on how to understand data and determine correlations using different techniques.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="blog">
-                            <img src="img/EDA.jpg" alt="">
-                            <div class="blog-text">
-                                <h4>
-                                    Machine Learning Model Building.
-                                </h4>
-                                <p>
-                                    Understand the process from the step of data collection to the measurement of efficiency of a model targeting supervised and unsupervised problems.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="blog">
-                            <img src="img/MLD.jpg" alt="">
-                            <div class="blog-text">
-                                <h4>
-                                    Machine Learning Model Deployment.
-                                </h4>
-                                <p>
-                                    Gain a solid basis on how to properly deploy a model whilst ensuring dynamic handling of newer inputs and data.
-                                </p>
-                            </div>
-                        </div>
+                <div class="blog">
+                    <img src="img/EDA.jpg" alt="">
+                    <div class="blog-text">
+                        <h4>
+                            <span class="text-en">Machine Learning Model Building</span>
+                            <span class="text-fr">Construction de Modèles de Machine Learning</span>
+                        </h4>
+                        <p>
+                            <span class="text-en">
+                                Understand the process from the step of data collection to the measurement of efficiency of a model targeting supervised and unsupervised problems.
+                            </span>
+                            <span class="text-fr">
+                                Comprendre le processus allant de la collecte des données à l’évaluation de l’efficacité d’un modèle, en ciblant des problèmes supervisés et non supervisés.
+                            </span>
+                        </p>
                     </div>
+                </div>
+
+                <div class="blog">
+                    <img src="img/MLD.jpg" alt="">
+                    <div class="blog-text">
+                        <h4>
+                            <span class="text-en">Machine Learning Model Deployment</span>
+                            <span class="text-fr">Déploiement de Modèles de Machine Learning</span>
+                        </h4>
+                        <p>
+                            <span class="text-en">
+                                Gain a solid basis on how to properly deploy a model whilst ensuring dynamic handling of newer inputs and data.
+                            </span>
+                            <span class="text-fr">
+                                Acquérir une base solide sur le déploiement correct d’un modèle tout en assurant une gestion dynamique des nouvelles entrées et des données.
+                            </span>
+                        </p>
                     </div>
+                </div>
+
+            </div>
+        </div>
                 <!--<div class="blogs">
                     <div class="blog">
                         <img src="img/port6.jpg" alt="">
@@ -1042,316 +1183,342 @@ echo sendEmail($to, $subject, $body);
             </div>
         </section>
         <section class="container contact" id="contact">
-            <div class="contact-container">
-                <div class="main-title">
-                    <h2>Contact <span>Me</span><span class="bg-text">Contact</span></h2>
-                </div>
-                <div class="contact-content-con">
-                    <div class="left-contact">
-                        <h4>Contact me here</h4>
-                    
-                        <p>
-                            Either by using social media or using this form !
-                        </p>
-                        <div class="contact-info">
-                            <div class="contact-item">
-                                <div class="icon">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    <span>Location : Sousse, Tunisia</span>
-                                </div>
-                                <p>
-                                
-                                </p>
-                            </div>
-                            <div class="contact-item">
-                                <div class="icon">
-                                    <i class="fas fa-envelope"></i>
-                                    <span>Email: mahdi.selten@gmail.com</span>
-                                </div>
-                                <p>
-                                    <span></span>
-                                </p>
-                            </div>
-                            <div class="contact-item">
-                                <div class="icon">
-                                    <i class="fas fa-globe-africa"></i>
-                                    <span>Languages: Arabic, English, French</span>
-                                </div>
-                                <p>
-                                    <span></span>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="contact-icons">
-                            <div class="contact-icon">
-                                <a href="https://www.facebook.com/mahdi.selten" target="_blank">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
-                                <a href="https://www.linkedin.com/in/mahdi-selten-55a766258/" target="_blank">
-                                    <i class="fab fa-linkedin"></i>
-                                </a>
-                            </div>
+    <div class="contact-container">
+        <div class="main-title">
+            <h2>
+                <span class="text-en">Contact <span>Me</span></span>
+                <span class="text-fr">Contactez <span>Moi</span></span>
+                <span class="bg-text text-en">Contact</span>
+                <span class="bg-text text-fr">Contact</span>
+            </h2>
+        </div>
+
+        <div class="contact-content-con">
+            <div class="left-contact">
+                <h4>
+                    <span class="text-en">Contact me here</span>
+                    <span class="text-fr">Contactez-moi ici</span>
+                </h4>
+
+                <p>
+                    <span class="text-en">
+                        Either by using social media or using this form !
+                    </span>
+                    <span class="text-fr">
+                        Via les réseaux sociaux ou en utilisant ce formulaire !
+                    </span>
+                </p>
+
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span class="text-en">Location : Sousse, Tunisia</span>
+                            <span class="text-fr">Localisation : Sousse, Tunisie</span>
                         </div>
                     </div>
-                    <div class="right-contact">
-                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSefXu9JRwfSTgGGYlqAFq8qj0o-0xJJIM0QDb3TT-gQ5PhghQ/viewform?embedded=true" width="640" height="959" frameborder="0" marginheight="0" marginwidth="0">Chargement…</iframe>
+
+                    <div class="contact-item">
+                        <div class="icon">
+                            <i class="fas fa-envelope"></i>
+                            <span>Email: mahdi.selten@gmail.com</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="icon">
+                            <i class="fas fa-globe-africa"></i>
+                            <span class="text-en">Languages: Arabic, English, French</span>
+                            <span class="text-fr">Langues : Arabe, Anglais, Français</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-icons">
+                    <div class="contact-icon">
+                        <a href="https://www.facebook.com/mahdi.selten" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/mahdi-selten-55a766258/" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="container" id="Passions">
-            <div class="blogs-content">
-                <div class="main-title">
-                    <h2>My <span>Passion</span><span class="bg-text">My Passion</span></h2>
-                </div>
 
-                <br>
-                <br>
-                <br>
-
-
-                <div class="main-title">
-                    
-                    <h2>So</h2>
-                </div>
-
-                <div class="portfolios">
-                    <div class="portfolio-item">
-                        <div class="image">
-                            <img src="img/Moi.jpg" alt="">
-                            <p>Tennis Player</p>
-                        </div>
-                        <div class="hover-items">
-                            <h3>Project Source</h3>
-                            <div class="icons">
-                                
-                                <a href="videos/MoiPlay.mp4" class="icon">
-                                    <i class="fab fa-youtube"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                
-                
-                    <div class="portfolio-item">
-                        <div class="image">
-                            <img src="img/setup.jpg" alt="">
-                            <p>Gaming</p>
-                        </div>
-                        <div class="hover-items">
-                            <h3>Project Source</h3>
-                            <div class="icons">
-                                
-                                
-                                <a href="videos/SecGtaV.mp4" class="icon">
-                                    <i class="fab fa-youtube"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                
-                
-                    <div class="portfolio-item">
-                        <div class="image">
-                            <img src="img/Coach.jpg" alt="">
-                            <p>Tennis Coach</p>
-                        </div>
-                        <div class="hover-items">
-                            <h3>Project Source</h3>
-                            <div class="icons">
-                        
-                            
-                                <a href="img/Coach.jpg" class="icon">
-                                    <i class="fab fa-youtube"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!--<div class="blogs">
-                    <div class="blog">
-                        <img src="img/port6.jpg" alt="">
-                        <div class="blog-text">
-                            <h4>
-                                How to Create Your Own Website
-                            </h4>
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Doloribus natus voluptas, eos obcaecati recusandae amet?
-                            </p>
-                        </div>
-                    </div>
-                    <div class="blog">
-                        <img src="img/blog1.jpg" alt="">
-                        <div class="blog-text">
-                            <h4>
-                                How to Become an Expert in Web Design
-                            </h4>
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Doloribus natus voluptas, eos obcaecati recusandae amet?
-                            </p>
-                        </div>
-                    </div>
-                    <div class="blog">
-                        <img src="img/blog2.jpg" alt="">
-                        <div class="blog-text">
-                            <h4>
-                                Become a Web Designer in 10 Days
-                            </h4>
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Doloribus natus voluptas, eos obcaecati recusandae amet?
-                            </p>
-                        </div>
-                    </div>
-                    <div class="blog">
-                        <img src="img/blog3.jpg" alt="">
-                        <div class="blog-text">
-                            <h4>
-                                Debbuging made easy with Web Inspector
-                            </h4>
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Doloribus natus voluptas, eos obcaecati recusandae amet?
-                            </p>
-                        </div>
-                    </div>
-                    <div class="blog">
-                        <img src="img/port1.jpg" alt="">
-                        <div class="blog-text">
-                            <h4>
-                                Get started with Web Design and UI Design
-                            </h4>
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Doloribus natus voluptas, eos obcaecati recusandae amet?
-                            </p>
-                        </div>
-                    </div>
-                    <div class="blog">
-                        <img src="img/port3.jpg" alt="">
-                        <div class="blog-text">
-                            <h4>
-                                This is what you need to know about Web Design
-                            </h4>
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Doloribus natus voluptas, eos obcaecati recusandae amet?
-                            </p>
-                        </div>
-                    </div>
-                </div>-->
+            <div class="right-contact">
+                <iframe 
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSefXu9JRwfSTgGGYlqAFq8qj0o-0xJJIM0QDb3TT-gQ5PhghQ/viewform?embedded=true"
+                    width="640"
+                    height="959"
+                    frameborder="0"
+                    marginheight="0"
+                    marginwidth="0">
+                    Chargement…
+                </iframe>
             </div>
-        </section>
+        </div>
+    </div>
+</section>
+
+       <section class="container" id="Passions">
+    <div class="blogs-content">
+        <div class="main-title">
+            <h2>
+                <span class="text-en">My <span>Passion</span></span>
+                <span class="text-fr">Ma <span>Passion</span></span>
+                <span class="bg-text text-en">My Passion</span>
+                <span class="bg-text text-fr">Ma Passion</span>
+            </h2>
+        </div>
+
+        <br><br><br>
+
+        <div class="main-title">
+            <h2>
+                <span class="text-en">So</span>
+                <span class="text-fr">Alors</span>
+            </h2>
+        </div>
+
+        <div class="portfolios">
+
+            <div class="portfolio-item">
+                <div class="image">
+                    <img src="img/Moi.jpg" alt="">
+                    <p>
+                        <span class="text-en">Tennis Player</span>
+                        <span class="text-fr">Joueur de Tennis</span>
+                    </p>
+                </div>
+                <div class="hover-items">
+                    <h3>
+                        <span class="text-en">Project Source</span>
+                        <span class="text-fr">Source du projet</span>
+                    </h3>
+                    <div class="icons">
+                        <a href="videos/MoiPlay.mp4" class="icon">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <div class="image">
+                    <img src="img/setup.jpg" alt="">
+                    <p>
+                        <span class="text-en">Gaming</span>
+                        <span class="text-fr">Jeux vidéo</span>
+                    </p>
+                </div>
+                <div class="hover-items">
+                    <h3>
+                        <span class="text-en">Project Source</span>
+                        <span class="text-fr">Source du projet</span>
+                    </h3>
+                    <div class="icons">
+                        <a href="videos/SecGtaV.mp4" class="icon">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <div class="image">
+                    <img src="img/Coach.jpg" alt="">
+                    <p>
+                        <span class="text-en">Tennis Coach</span>
+                        <span class="text-fr">Entraîneur de Tennis</span>
+                    </p>
+                </div>
+                <div class="hover-items">
+                    <h3>
+                        <span class="text-en">Project Source</span>
+                        <span class="text-fr">Source du projet</span>
+                    </h3>
+                    <div class="icons">
+                        <a href="img/Coach.jpg" class="icon">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
         <section class="container" id="updates">
-            <div class="blogs-content">
-                <div class="main-title">
-                    <h2>Portfolio <span>Updates</span><span class="bg-text">Updates</span></h2>
-                </div>
+    <div class="blogs-content">
+        <div class="main-title">
+            <h2>
+                <span class="text-en">Portfolio <span>Updates</span></span>
+                <span class="text-fr">Mises à jour du <span>Portfolio</span></span>
+                <span class="bg-text text-en">Updates</span>
+                <span class="bg-text text-fr">Mises à jour</span>
+            </h2>
+        </div>
 
-                <br>
-                <br>
-                <br>
+        <br><br><br>
 
+        <div class="MyClass" style="display: flex;">
 
-                <div class="main-title">
+            <!-- Technical Updates -->
+            <div class="RightSide" style="margin-left: 100px;">
+                <h3>
+                    <span class="text-en">Technical Updates</span>
+                    <span class="text-fr">Mises à jour techniques</span>
+                </h3>
 
-                    
-                    
-                </div>
-                
-                <div class="MyClass" style="display: flex;">
-                    <div class="RightSide" style="margin-left: 100px;"">
-                        <h3>Technical Updates</h3>
-                        <br>
-                        <br>
-                        <div class="timeline">
-                            <div class="timeline"   style="display: flex; flex-direction: column;">
-                                <div class="timeline-item">
-                                    <div class="tl-icon">
-                                        <i class="fas fa-briefcase"></i>
-                                    </div>
-                                    <p class="tl-duration">21/12/2023</p>
-                                    <h5>Portfolio<span> Update</span></h5>
-                                    <p>
-                                        The portfolio is now divided based on the content
-                                    </p>
-                                </div>
-                                <div class="timeline-item">
-                                    <div class="tl-icon">
-                                        <i class="fas fa-briefcase"></i>
-                                    </div>
-                                    <p class="tl-duration">08/12/2023</p>
-                                    <h5>New Section added<span> Updates</span></h5>
-                                    <p>
-                                        The section will incclude technical as well as content updates
-                                    </p>
-                                </div>
-                            </div>
-                            
+                <br><br>
+
+                <div class="timeline" style="display: flex; flex-direction: column;">
+
+                    <div class="timeline-item">
+                        <div class="tl-icon">
+                            <i class="fas fa-briefcase"></i>
                         </div>
+                        <p class="tl-duration">21/12/2023</p>
+                        <h5>
+                            <span class="text-en">Portfolio <span>Update</span></span>
+                            <span class="text-fr">Mise à jour du <span>Portfolio</span></span>
+                        </h5>
+                        <p>
+                            <span class="text-en">
+                                The portfolio is now divided based on the content.
+                            </span>
+                            <span class="text-fr">
+                                Le portfolio est désormais divisé en fonction du contenu.
+                            </span>
+                        </p>
                     </div>
-                    <div class="LeftSide"style="margin-right: 100px;">
-                        <h3>Content Updates</h3>
-                        <br>
-                        <br>
-                        <div class="timeline">
-                            <div class="timeline-item">
-                                <div class="tl-icon">
-                                    <i class="fas fa-briefcase"></i>
-                                </div>
-                                <p class="tl-duration">23/01/2023</p>
-                                <h5>Project Added<span> Machine Learning</span></h5>
-                                <p>
-                                    Spam Mail detection using Logistic Regression Model
-                                </p>
-                            </div>
-                        </div>
 
-                        <div class="timeline">
-                            <div class="timeline-item">
-                                <div class="tl-icon">
-                                    <i class="fas fa-briefcase"></i>
-                                </div>
-                                <p class="tl-duration">15/01/2023</p>
-                                <h5>Projects Added<span> Machine Learning</span></h5>
-                                <p>
-                                    These projects were done using python (.ipynb). The projects consists
-                                    of different models targeting different objectives.
-                                </p>
-                            </div>
+                    <div class="timeline-item">
+                        <div class="tl-icon">
+                            <i class="fas fa-briefcase"></i>
                         </div>
-                        <div class="timeline">
-                            <div class="timeline-item">
-                                <div class="tl-icon">
-                                    <i class="fas fa-briefcase"></i>
-                                </div>
-                                <p class="tl-duration">15/12/2023</p>
-                                <h5>Project Updated<span> SpringBoot</span></h5>
-                                <p>
-                                    The project done with SpringBoot has been updated
-                                </p>
-                            </div>
-                        </div>
-                        <div class="timeline">
-                            <div class="timeline-item">
-                                <div class="tl-icon">
-                                    <i class="fas fa-briefcase"></i>
-                                </div>
-                                <p class="tl-duration">06/12/2023</p>
-                                <h5>New Project added<span> Blender</span></h5>
-                                <p>
-                                    A new project demo has been added that demostrate a scene made with Blender
-                                </p>
-                            </div>
-                        </div>
-                        
+                        <p class="tl-duration">08/12/2023</p>
+                        <h5>
+                            <span class="text-en">New Section added <span>Updates</span></span>
+                            <span class="text-fr">Nouvelle section ajoutée <span>Mises à jour</span></span>
+                        </h5>
+                        <p>
+                            <span class="text-en">
+                                The section will include technical as well as content updates.
+                            </span>
+                            <span class="text-fr">
+                                Cette section inclura des mises à jour techniques ainsi que du contenu.
+                            </span>
+                        </p>
                     </div>
+
                 </div>
             </div>
-        </section>
+
+            <!-- Content Updates -->
+            <div class="LeftSide" style="margin-right: 100px;">
+                <h3>
+                    <span class="text-en">Content Updates</span>
+                    <span class="text-fr">Mises à jour de contenu</span>
+                </h3>
+
+                <br><br>
+
+                <div class="timeline">
+
+                    <div class="timeline-item">
+                        <div class="tl-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <p class="tl-duration">23/01/2023</p>
+                        <h5>
+                            <span class="text-en">Project Added <span>Machine Learning</span></span>
+                            <span class="text-fr">Projet ajouté <span>Machine Learning</span></span>
+                        </h5>
+                        <p>
+                            <span class="text-en">
+                                Spam Mail detection using Logistic Regression Model.
+                            </span>
+                            <span class="text-fr">
+                                Détection de mails indésirables à l’aide d’un modèle de régression logistique.
+                            </span>
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="tl-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <p class="tl-duration">15/01/2023</p>
+                        <h5>
+                            <span class="text-en">Projects Added <span>Machine Learning</span></span>
+                            <span class="text-fr">Projets ajoutés <span>Machine Learning</span></span>
+                        </h5>
+                        <p>
+                            <span class="text-en">
+                                These projects were done using Python (.ipynb). The projects consist of
+                                different models targeting different objectives.
+                            </span>
+                            <span class="text-fr">
+                                Ces projets ont été réalisés en Python (.ipynb) et comprennent différents
+                                modèles répondant à divers objectifs.
+                            </span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="tl-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <p class="tl-duration">15/12/2023</p>
+                        <h5>
+                            <span class="text-en">Project Updated <span>Spring Boot</span></span>
+                            <span class="text-fr">Projet mis à jour <span>Spring Boot</span></span>
+                        </h5>
+                        <p>
+                            <span class="text-en">
+                                The project done with Spring Boot has been updated.
+                            </span>
+                            <span class="text-fr">
+                                Le projet réalisé avec Spring Boot a été mis à jour.
+                            </span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="tl-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <p class="tl-duration">06/12/2023</p>
+                        <h5>
+                            <span class="text-en">New Project added <span>Blender</span></span>
+                            <span class="text-fr">Nouveau projet ajouté <span>Blender</span></span>
+                        </h5>
+                        <p>
+                            <span class="text-en">
+                                A new project demo has been added that demonstrates a scene made with Blender.
+                            </span>
+                            <span class="text-fr">
+                                Une nouvelle démonstration de projet a été ajoutée, présentant une scène réalisée avec Blender.
+                            </span>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
     </main>
 
     <div class="controls">
@@ -1434,5 +1601,44 @@ function sendEmail() {
     console.error('Error sending email:', error);
   });
 }
+
+const enBtn = document.getElementById("lang-en");
+const frBtn = document.getElementById("lang-fr");
+const langButtons = document.querySelectorAll(".lang-btn");
+
+function setLanguage(lang) {
+    if (lang === "en") {
+        document.querySelectorAll(".text-en").forEach(el => el.style.display = "block");
+        document.querySelectorAll(".text-fr").forEach(el => el.style.display = "none");
+    } else {
+        document.querySelectorAll(".text-en").forEach(el => el.style.display = "none");
+        document.querySelectorAll(".text-fr").forEach(el => el.style.display = "block");
+    }
+
+    // Button state
+    langButtons.forEach(btn => btn.classList.remove("active"));
+    document.getElementById(`lang-${lang}`).classList.add("active");
+
+    // Save choice
+    localStorage.setItem("language", lang);
+}
+
+// Button clicks
+enBtn.addEventListener("click", () => setLanguage("en"));
+frBtn.addEventListener("click", () => setLanguage("fr"));
+
+// ✅ FORCE DEFAULT LANGUAGE ON LOAD
+const savedLang = localStorage.getItem("language") || "en";
+setLanguage(savedLang);
+
+
+window.addEventListener("load", () => {
+    alert(
+        "ENGLISH:\nWe are adding French language support in addition to English, along with refinements and corrections.\nSome minor bugs may appear while browsing the portfolio.\nThank you for your understanding!\n\n" +
+        "FRANÇAIS:\nNous ajoutons le support de la langue française en plus de l’anglais, ainsi que des améliorations et des corrections.\nQuelques bugs mineurs peuvent apparaître lors de la navigation dans le portfolio.\nMerci de votre compréhension !"
+    );
+});
+
+
 </script>
 </html>
