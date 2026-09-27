@@ -266,43 +266,25 @@ section {
 
 .about-stats {
     padding-bottom: 4rem;
-    .progress-bars {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 2rem;
-        .progress-bar {
-            display: flex;
-            flex-direction: column;
-            .prog-title {
-                text-transform: uppercase;
-                font-weight: 500;
-            }
-            .progress-con {
-                display: flex;
-                align-items: center;
-                gap: 1rem;
-
-                .skill-rating {
-                    display: flex;
-                    gap: .4rem;
-                    .dot {
-                        width: .8rem;
-                        height: .8rem;
-                        border-radius: 50%;
-                        background-color: var(--color-grey-4);
-                        transition: all .3s ease-in-out;
-                    }
-                    .dot.filled {
-                        background-color: var(--color-secondary);
-                    }
-                }
-
-                .skill-level {
-                    font-size: .85rem;
-                    color: var(--color-grey-2);
-                    text-transform: uppercase;
-                    letter-spacing: 1px;
-                }
+    .skills-tags {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        .skill-tag {
+            padding: .6rem 1.4rem;
+            border: 1px solid var(--color-secondary);
+            border-radius: 30px;
+            font-size: .95rem;
+            font-weight: 500;
+            color: var(--color-white);
+            background-color: var(--color-grey-5);
+            transition: all .3s ease-in-out;
+            cursor: default;
+            &:hover {
+                background-color: var(--color-secondary);
+                color: var(--color-primary);
+                transform: translateY(-3px);
             }
         }
     }
