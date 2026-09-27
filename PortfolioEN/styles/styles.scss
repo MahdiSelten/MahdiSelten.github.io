@@ -298,6 +298,19 @@ section {
                         transition: all .4s ease-in-out;
                         width: 60%;
                     }
+                    .w95 { width: 95%; }
+                    .w90 { width: 90%; }
+                    .w85 { width: 85%; }
+                    .w80 { width: 80%; }
+                    .w75 { width: 75%; }
+                    .w70 { width: 70%; }
+                    .w65 { width: 65%; }
+                    .w60 { width: 60%; }
+                    .w55 { width: 55%; }
+                    .w50 { width: 50%; }
+                    .w45 { width: 45%; }
+                    .w40 { width: 40%; }
+                    /* anciennes classes conservees pour compatibilite */
                     .html { width: 80%; }
                     .css { width: 95%; }
                     .js { width: 75%; }
@@ -666,6 +679,38 @@ section {
             font-size: 6.3rem;
         }
     }
+}
+
+/* ---- Badge "source a venir" sur les projets sans lien ---- */
+.portfolio-item {
+    position: relative;
+}
+.src-badge {
+    position: absolute;
+    top: .8rem;
+    right: .8rem;
+    z-index: 3;
+    display: inline-flex;
+    align-items: center;
+    gap: .4rem;
+    padding: .35rem .7rem;
+    border-radius: 999px;
+    font-size: .78rem;
+    font-weight: 600;
+    letter-spacing: .02em;
+    color: var(--color-white);
+    background-color: rgba(0, 0, 0, .62);
+    border: 1px solid var(--color-secondary);
+    backdrop-filter: blur(3px);
+    pointer-events: none;
+}
+.src-badge i {
+    font-size: .72rem;
+    color: var(--color-secondary);
+}
+.portfolio-item:hover .src-badge {
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
 }
 
 @import './media';
